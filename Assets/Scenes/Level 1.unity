@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 172219204}
   - component: {fileID: 172219206}
   - component: {fileID: 172219205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (13)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 190600700}
   - component: {fileID: 190600702}
   - component: {fileID: 190600701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (4)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - component: {fileID: 196973546}
   - component: {fileID: 196973548}
   - component: {fileID: 196973547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (8)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 300404500}
   - component: {fileID: 300404502}
   - component: {fileID: 300404501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (5)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1216,7 +1216,7 @@ GameObject:
   - component: {fileID: 951181674}
   - component: {fileID: 951181675}
   - component: {fileID: 951181676}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1324,7 +1324,7 @@ GameObject:
   - component: {fileID: 1027388689}
   - component: {fileID: 1027388691}
   - component: {fileID: 1027388690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (9)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 1193581451}
   - component: {fileID: 1193581453}
   - component: {fileID: 1193581452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (2)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1655,6 +1655,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1249718369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249718370}
+  m_Layer: 0
+  m_Name: Feet
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1249718370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249718369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.293, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523274035}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1288463916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1696,7 @@ GameObject:
   - component: {fileID: 1288463917}
   - component: {fileID: 1288463919}
   - component: {fileID: 1288463918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (7)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1774,7 +1804,7 @@ GameObject:
   - component: {fileID: 1295407705}
   - component: {fileID: 1295407707}
   - component: {fileID: 1295407706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassRight (1)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -1882,7 +1912,7 @@ GameObject:
   - component: {fileID: 1318693419}
   - component: {fileID: 1318693421}
   - component: {fileID: 1318693420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (11)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2103,7 +2133,7 @@ GameObject:
   - component: {fileID: 1469556574}
   - component: {fileID: 1469556576}
   - component: {fileID: 1469556575}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (3)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2367,6 +2397,7 @@ GameObject:
   - component: {fileID: 1523274033}
   - component: {fileID: 1523274037}
   - component: {fileID: 1523274038}
+  - component: {fileID: 1523274036}
   m_Layer: 0
   m_Name: Chara
   m_TagString: Player
@@ -2454,10 +2485,31 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1249718370}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1523274036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523274032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18282c1229b7f4ae3a5d921d6a117bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  jumpForce: 5
+  feetPos: {fileID: 1249718370}
+  checkRadius: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  jumpTime: 0.5
 --- !u!50 &1523274037
 Rigidbody2D:
   serializedVersion: 4
@@ -2470,7 +2522,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2516,7 +2568,7 @@ GameObject:
   - component: {fileID: 1600504668}
   - component: {fileID: 1600504670}
   - component: {fileID: 1600504669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (12)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2624,7 +2676,7 @@ GameObject:
   - component: {fileID: 1734171931}
   - component: {fileID: 1734171933}
   - component: {fileID: 1734171932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (10)
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2732,7 +2784,7 @@ GameObject:
   - component: {fileID: 1806606722}
   - component: {fileID: 1806606723}
   - component: {fileID: 1806606724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid
   m_TagString: ground
   m_Icon: {fileID: 0}
@@ -2871,7 +2923,7 @@ GameObject:
   - component: {fileID: 2118668811}
   - component: {fileID: 2118668813}
   - component: {fileID: 2118668812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GrassMid (6)
   m_TagString: ground
   m_Icon: {fileID: 0}
