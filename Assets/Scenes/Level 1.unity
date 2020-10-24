@@ -1243,8 +1243,9 @@ GameObject:
   m_Component:
   - component: {fileID: 930988435}
   - component: {fileID: 930988436}
+  - component: {fileID: 930988437}
   m_Layer: 0
-  m_Name: Front Mountain
+  m_Name: Front Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1315,6 +1316,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &930988437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930988434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.8, y: 0.2}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &932775237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066652131}
   - component: {fileID: 1066652132}
+  - component: {fileID: 1066652133}
   m_Layer: 0
   m_Name: Back Mountain
   m_TagString: Untagged
@@ -1725,6 +1742,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1066652133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066652130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.4, y: 0.1}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &1085654083
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,8 +2594,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1397362513}
   - component: {fileID: 1397362514}
+  - component: {fileID: 1397362515}
   m_Layer: 0
-  m_Name: Mid Mountain
+  m_Name: Mid Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2635,6 +2668,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1397362515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397362512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 5, y: 0.1}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &1397741846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,7 +2746,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -7.449642}
+  m_Offset: {x: 0, y: -7.494555}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 14.829999}
     pivot: {x: 0.5, y: 0.5}
@@ -2709,7 +2757,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 57.6, y: 1.300714}
+  m_Size: {x: 57.6, y: 1.2108889}
   m_EdgeRadius: 0
 --- !u!212 &1433723323
 SpriteRenderer:
