@@ -14,6 +14,16 @@ public class CameraFollow : MonoBehaviour
     //this is the amount the camera is offset from the target
     public Vector3 offset;
 
+    [SerializeField]
+    float leftLimit;
+    [SerializeField]
+    float rightLimit;
+    [SerializeField]
+    float bottomLimit;
+    [SerializeField]
+    float topLimit;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +45,16 @@ public class CameraFollow : MonoBehaviour
         //LookAt is used to automatically adjust the camera's rotation to look at the target. 
         //We need this because the Lerp and smooth mean the camera will sometimes be slightly behind the character movement.
         transform.LookAt(target);
+
+
+        transform.position = new Vector3
+            (
+                Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
+                Mathf.Clamp(transform.position.x, bottomLimit, topLimit),
+                transform.position.z
+
+            );
+
+
     }
 }
