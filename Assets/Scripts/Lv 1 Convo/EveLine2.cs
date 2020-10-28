@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HollyLine1 : MonoBehaviour
+public class EveLine2 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -16,6 +16,7 @@ public class HollyLine1 : MonoBehaviour
     {
         appearAnimation.ResetTrigger("Next");
         appearAnimation.ResetTrigger("Next 2");
+        appearAnimation.ResetTrigger("Next 3");
     }
 
     private void Update()
@@ -48,7 +49,7 @@ public class HollyLine1 : MonoBehaviour
 
     public void NextSentence()
     {
-        appearAnimation.SetTrigger("Next 2");
-        FindObjectOfType<EveLine2>().Continue();
+        appearAnimation.SetTrigger("Next 3");
+        
     }
 }
