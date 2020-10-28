@@ -15,7 +15,6 @@ public class HollyLine1 : MonoBehaviour
     private void Start()
     {
         appearAnimation.ResetTrigger("Next");
-        appearAnimation.ResetTrigger("Next 2");
     }
 
     private void Update()
@@ -32,6 +31,7 @@ public class HollyLine1 : MonoBehaviour
     public void Continue()
     {
         StartCoroutine(Type());
+        appearAnimation.ResetTrigger("Next 2");
     }
 
     IEnumerator Type()

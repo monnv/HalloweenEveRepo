@@ -14,9 +14,7 @@ public class EveLine2 : MonoBehaviour
 
     private void Start()
     {
-        appearAnimation.ResetTrigger("Next");
         appearAnimation.ResetTrigger("Next 2");
-        appearAnimation.ResetTrigger("Next 3");
     }
 
     private void Update()
@@ -33,6 +31,8 @@ public class EveLine2 : MonoBehaviour
     public void Continue()
     {
         StartCoroutine(Type());
+        appearAnimation.ResetTrigger("Next");
+        appearAnimation.ResetTrigger("Next 3");
     }
 
     IEnumerator Type()

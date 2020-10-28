@@ -45,7 +45,6 @@ public class SpeechDialogue : MonoBehaviour
         
     }
 
-    //Continue Button Bellow
 
     public void NextSentence()
     {
