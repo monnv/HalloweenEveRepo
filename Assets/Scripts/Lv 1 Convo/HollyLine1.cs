@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class SpeechDialogue : MonoBehaviour
+public class HollyLine1 : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -14,26 +14,20 @@ public class SpeechDialogue : MonoBehaviour
 
     private void Start()
     {
-        appearAnimation.ResetTrigger("Start");
+        appearAnimation.ResetTrigger("Next");
     }
-
-    //public GameObject continueButton;
 
     private void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                NextSentence();
-            }
+            NextSentence();
         }
     }
 
-    public void Speak()
+    public void Continue()
     {
         StartCoroutine(Type());
-        appearAnimation.SetTrigger("Start");
     }
 
     IEnumerator Type()
@@ -44,26 +38,12 @@ public class SpeechDialogue : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
-        
+
     }
 
-    //Continue Button Bellow
 
     public void NextSentence()
     {
-        //continueButton.SetActive(false);
-
-    if(index < sentences.Length - 1)
-    {
-        index++;
-        textDisplay.text = "";
-        StartCoroutine(Type());
-    }
-    else
-        {
-            textDisplay.text = "";
-        //continueButton.SetActive(false);
-        }
+        appearAnimation.SetTrigger("Next");
     }
 }
-
