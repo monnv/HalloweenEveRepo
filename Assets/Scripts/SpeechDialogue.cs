@@ -21,10 +21,13 @@ public class SpeechDialogue : MonoBehaviour
 
     private void Update()
     {
-        //if(textDisplay.text == sentences[index])
-        //{
-        //continueButton.SetActive(true);
-        //}
+        if(textDisplay.text == sentences[index])
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NextSentence();
+            }
+        }
     }
 
     public void Speak()
@@ -46,21 +49,21 @@ public class SpeechDialogue : MonoBehaviour
 
     //Continue Button Bellow
 
-    // public void NextSentence()
-    //{
-    //continueButton.SetActive(false);
+    public void NextSentence()
+    {
+        //continueButton.SetActive(false);
 
-    //if(index < sentences.Length - 1)
-    //{
-    //index++;
-    //textDisplay.text = "";
-    //StartCoroutine(Type());
-    //}
-    //else
-    //{
-    // textDisplay.text = "";
-    //continueButton.SetActive(false);
-    //}
-    //}
+    if(index < sentences.Length - 1)
+    {
+        index++;
+        textDisplay.text = "";
+        StartCoroutine(Type());
+    }
+    else
+        {
+            textDisplay.text = "";
+        //continueButton.SetActive(false);
+        }
+    }
 }
 
