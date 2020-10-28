@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ThoughtDialogue : MonoBehaviour
+public class SpeechDialogue : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -19,11 +19,11 @@ public class ThoughtDialogue : MonoBehaviour
     {
         //if(textDisplay.text == sentences[index])
         //{
-            //continueButton.SetActive(true);
+        //continueButton.SetActive(true);
         //}
     }
 
-    public void Typing()
+    public void Start()
     {
         StartCoroutine(Type());
     }
@@ -31,7 +31,8 @@ public class ThoughtDialogue : MonoBehaviour
     IEnumerator Type()
     {
         yield return new WaitForSeconds(1f);
-        foreach (char letter in sentences[index].ToCharArray()){
+        foreach (char letter in sentences[index].ToCharArray())
+        {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -39,20 +40,21 @@ public class ThoughtDialogue : MonoBehaviour
 
     //Continue Button Bellow
 
-   // public void NextSentence()
+    // public void NextSentence()
     //{
-        //continueButton.SetActive(false);
+    //continueButton.SetActive(false);
 
-        //if(index < sentences.Length - 1)
-        //{
-            //index++;
-            //textDisplay.text = "";
-            //StartCoroutine(Type());
-        //}
-        //else
-        //{
-           // textDisplay.text = "";
-            //continueButton.SetActive(false);
-        //}
+    //if(index < sentences.Length - 1)
+    //{
+    //index++;
+    //textDisplay.text = "";
+    //StartCoroutine(Type());
+    //}
+    //else
+    //{
+    // textDisplay.text = "";
+    //continueButton.SetActive(false);
+    //}
     //}
 }
+
