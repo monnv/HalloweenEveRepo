@@ -10,10 +10,14 @@ public class SpeechDialogue : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    public Animator appearAnimation;
 
+    private void Start()
+    {
+        appearAnimation.ResetTrigger("Start");
+    }
 
     //public GameObject continueButton;
-
 
     private void Update()
     {
@@ -23,9 +27,10 @@ public class SpeechDialogue : MonoBehaviour
         //}
     }
 
-    public void Start()
+    public void Speak()
     {
         StartCoroutine(Type());
+        appearAnimation.SetTrigger("Start");
     }
 
     IEnumerator Type()
@@ -36,6 +41,7 @@ public class SpeechDialogue : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        
     }
 
     //Continue Button Bellow
