@@ -1075,7 +1075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.8, y: 0.1}
+  parallaxEffectMultiplier: {x: 0.8, y: 0.9}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!1 &1174230875
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.5, y: 0.1}
+  parallaxEffectMultiplier: {x: 0.5, y: 0.5}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!212 &1201651905
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.4, y: 0.1}
+  parallaxEffectMultiplier: {x: 0.4, y: 0.3}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!1 &1433723321
@@ -1962,11 +1962,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.1332927
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021e54cedd6a1411a9a2a7b59b3d153d, type: 3}
 --- !u!4 &1662474466 stripped
@@ -2161,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.5, y: 0.1}
+  parallaxEffectMultiplier: {x: 0.5, y: 0.5}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!1001 &172817823652973139
