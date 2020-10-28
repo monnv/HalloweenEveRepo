@@ -45,10 +45,9 @@ public class HollyLine1 : MonoBehaviour
 
     }
 
-
     public void NextSentence()
     {
         appearAnimation.SetTrigger("Next 2");
-        FindObjectOfType<EveLine2>().Continue();
+        
     }
 }

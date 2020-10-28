@@ -46,7 +46,6 @@ public class EveLine2 : MonoBehaviour
 
     }
 
-
     public void NextSentence()
     {
         appearAnimation.SetTrigger("Next 3");

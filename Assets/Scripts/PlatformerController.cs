@@ -9,11 +9,16 @@ public class PlatformerController : MonoBehaviour
     public float speed;
     public float jumpHeight;
 
+    float horizontalMove = 0f;
+    private float moveInput;
+
     //Assigning a variable where we'll store the Rigidbody2D component.
     private Rigidbody2D rb;
 
     private bool onGround;
     private bool canJump;
+
+    private bool facingRight = true;
 
 
     // Start is called before the first frame update
@@ -42,7 +47,6 @@ public class PlatformerController : MonoBehaviour
             canJump = false;
         }
 
-
         //Movement code for left and right arrow keys.
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -58,6 +62,30 @@ public class PlatformerController : MonoBehaviour
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
+
+    }
+
+    void FixedUpdate()
+    {
+        moveInput = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        if(facingRight == false && moveInput > 0)
+        {
+            Flip();
+        }
+        else if (facingRight == true && moveInput < 0)
+        {
+            Flip();
+        }
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 
 

@@ -19,7 +19,7 @@ public class SpeechDialogue : MonoBehaviour
 
     private void Update()
     {
-        if(textDisplay.text == sentences[index])
+        if (textDisplay.text == sentences[index])
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -44,7 +44,6 @@ public class SpeechDialogue : MonoBehaviour
         }
         
     }
-
 
     public void NextSentence()
     {

@@ -2643,7 +2643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1508794840
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2760,6 +2760,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Chara
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847625223219875509, guid: ce515939730fa44528e2ec7054fe28a7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce515939730fa44528e2ec7054fe28a7, type: 3}
@@ -3340,7 +3345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1491.2971, y: 714.6769}
+  m_AnchoredPosition: {x: 789, y: 714.6769}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1906291111
@@ -3357,7 +3362,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1112468597}
   sentences:
-  - Hey you coming, slowpoke?
+  - Oh, hi Eve. Were you waiting long? (press space)
   typingSpeed: 0.08
   appearAnimation: {fileID: 2006865576}
 --- !u!225 &1906291112
@@ -3594,7 +3599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 782, y: 714.6769}
+  m_AnchoredPosition: {x: 1601, y: 714.6769}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055442598
@@ -3611,7 +3616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1154094949}
   sentences:
-  - Sorry were you waiting long?
+  - Nope, just got here. Glad you showed up, follow me over here. (Walk to the right)
   typingSpeed: 0.08
   appearAnimation: {fileID: 2006865576}
 --- !u!225 &2055442599
