@@ -12,6 +12,7 @@ public class PressureJump : MonoBehaviour
 
 
     private bool isGrounded;
+    private bool facingRight = true;
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -19,12 +20,13 @@ public class PressureJump : MonoBehaviour
     private float jumpTimeCounter;
     public float jumpTime;
     private bool isJumping;
-    private bool facingRight = true;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        anim.SetBool("isGrounded", true);
     }
 
     void FixedUpdate()
@@ -40,6 +42,7 @@ public class PressureJump : MonoBehaviour
         {
             Flip();
         }
+
     }
 
     void Flip()
@@ -50,11 +53,12 @@ public class PressureJump : MonoBehaviour
         transform.localScale = Scaler;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
+        #region jumping
+        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;
@@ -66,22 +70,34 @@ public class PressureJump : MonoBehaviour
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+
                 anim.SetBool("isJumping", true);
+                anim.SetBool("isGrounded", false);
             }
             else if (jumpTimeCounter < 0.1)
             {
                 isJumping = false;
+
                 anim.SetBool("isJumping", false);
+
             }
         if (Input.GetKeyUp(KeyCode.Space))
         {
             isJumping = false;
         }
 
+        if (isGrounded == true)
+            {
+                anim.SetBool("isJumping", false);
+                anim.SetBool("isGrounded", true);
+            }
+
+        #endregion
+        #region Running Animation
+
         if (moveInput == 0)
         {
             anim.SetBool("isRunning", false);
-
         }
 
         else if (moveInput > 0)
@@ -92,6 +108,6 @@ public class PressureJump : MonoBehaviour
         {
             anim.SetBool("isRunning", true);
         }
-
+        #endregion
     }
 }
