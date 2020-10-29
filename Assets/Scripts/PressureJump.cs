@@ -55,7 +55,7 @@ public class PressureJump : MonoBehaviour
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
-        if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -66,10 +66,12 @@ public class PressureJump : MonoBehaviour
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
+                anim.SetBool("isJumping", true);
             }
-            else
+            else if (jumpTimeCounter < 0.1)
             {
                 isJumping = false;
+                anim.SetBool("isJumping", false);
             }
         if (Input.GetKeyUp(KeyCode.Space))
         {
@@ -90,5 +92,6 @@ public class PressureJump : MonoBehaviour
         {
             anim.SetBool("isRunning", true);
         }
+
     }
 }
