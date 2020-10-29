@@ -229,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77218253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.07000001, z: 5}
+  m_LocalPosition: {x: 0, y: -0.7, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1037026753}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.1, y: 0.2}
+  parallaxEffectMultiplier: {x: 0.1, y: 0.9}
   infiniteHorizontal: 1
   infiniteVertical: 0
 --- !u!212 &77218256
@@ -584,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415902066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7100023, y: 0.98, z: 0}
+  m_LocalPosition: {x: -0.7100023, y: 1.2, z: 0}
   m_LocalScale: {x: 0.35071158, y: 0.35071158, z: 0.35071158}
   m_Children: []
   m_Father: {fileID: 77218254}
@@ -2066,7 +2066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037026752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.03, y: 0.98, z: 0}
+  m_LocalPosition: {x: 38.03, y: -0.3, z: 0}
   m_LocalScale: {x: 0.35071158, y: 0.35071158, z: 0.35071158}
   m_Children: []
   m_Father: {fileID: 77218254}
@@ -2133,9 +2133,9 @@ GameObject:
   - component: {fileID: 1058800358}
   - component: {fileID: 1058800357}
   - component: {fileID: 1058800356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lv 2 floor_1
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2259,7 +2259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082836983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.07000001, z: 0}
+  m_LocalPosition: {x: 0, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 883327678}
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.5, y: 0.5}
+  parallaxEffectMultiplier: {x: 0.5, y: 0.98}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!1 &1202185836
@@ -2527,7 +2527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463733015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.199997, y: 0.98, z: 0}
+  m_LocalPosition: {x: 19.199997, y: 0.7, z: 0}
   m_LocalScale: {x: 0.35071158, y: 0.35071158, z: 0.35071158}
   m_Children: []
   m_Father: {fileID: 77218254}
@@ -2790,7 +2790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775593068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.69, y: 1.62, z: 60}
+  m_LocalPosition: {x: 19.69, y: -1.01, z: 60}
   m_LocalScale: {x: 0.9113002, y: 0.5601, z: 0.5601}
   m_Children: []
   m_Father: {fileID: 469536378}
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.8, y: 0.97}
+  parallaxEffectMultiplier: {x: 0.8, y: 0.99}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!212 &1775593071
@@ -3257,7 +3257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082196255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.07, z: 25}
+  m_LocalPosition: {x: 0, y: -0.38, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 76216232}
@@ -3279,7 +3279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9caddec0d8bf649ab82dc7b1958170b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.4, y: 0.35}
+  parallaxEffectMultiplier: {x: 0.4, y: 0.95}
   infiniteHorizontal: 0
   infiniteVertical: 0
 --- !u!212 &2082196258
@@ -3415,7 +3415,7 @@ PrefabInstance:
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5680001
+      value: -0.71800023
       objectReference: {fileID: 0}
     - target: {fileID: 5419381393450352414, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
@@ -3490,7 +3490,7 @@ PrefabInstance:
     - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5680001
+      value: -0.71800023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021e54cedd6a1411a9a2a7b59b3d153d, type: 3}
