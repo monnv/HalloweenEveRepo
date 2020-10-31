@@ -3423,7 +3423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1008711472}
-  fallDelay: 0.9
+  fallDelay: 1
   respawns: 0
 --- !u!50 &1008711472
 Rigidbody2D:
