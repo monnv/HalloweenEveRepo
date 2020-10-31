@@ -153,7 +153,7 @@ MonoBehaviour:
   enemy: {fileID: 9056997106124377039, guid: 975ded760751c47f0be0f6ffb513636a, type: 3}
   min: 95
   max: 120
-  spawnRate: 0.5
+  spawnRate: 1
 --- !u!4 &44618205
 Transform:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   enemy: {fileID: 9056997106124377039, guid: 975ded760751c47f0be0f6ffb513636a, type: 3}
   min: 5
   max: 30
-  spawnRate: 0.5
+  spawnRate: 1
 --- !u!4 &410634456
 Transform:
   m_ObjectHideFlags: 0
@@ -3026,7 +3026,7 @@ MonoBehaviour:
   enemy: {fileID: 9056997106124377039, guid: 975ded760751c47f0be0f6ffb513636a, type: 3}
   min: 35
   max: 60
-  spawnRate: 0.5
+  spawnRate: 1
 --- !u!4 &785144564
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,7 +4393,7 @@ MonoBehaviour:
   enemy: {fileID: 9056997106124377039, guid: 975ded760751c47f0be0f6ffb513636a, type: 3}
   min: 65
   max: 90
-  spawnRate: 0.5
+  spawnRate: 1
 --- !u!4 &1222223742
 Transform:
   m_ObjectHideFlags: 0
@@ -5183,7 +5183,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ef1a18d2a558e43169652e2cbb2e91fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d81cdf1ced3647e696a795a6b4a1f77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5211,7 +5211,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 59.111374, y: 29.700003}
+    oldSize: {x: 59.1, y: 29.7}
     newSize: {x: 59.111374, y: 29.700003}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5296,7 +5296,7 @@ MonoBehaviour:
   enemy: {fileID: 9056997106124377039, guid: 975ded760751c47f0be0f6ffb513636a, type: 3}
   min: 125
   max: 150
-  spawnRate: 0.5
+  spawnRate: 1
 --- !u!4 &1379512310
 Transform:
   m_ObjectHideFlags: 0
@@ -5406,12 +5406,12 @@ PrefabInstance:
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47940326
+      value: 0.6927366
       objectReference: {fileID: 0}
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4111245
+      value: -1.3049245
       objectReference: {fileID: 0}
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
@@ -5423,6 +5423,11 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 2068207581}
+    - target: {fileID: 5419381393450352414, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
+        type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5419381394530104280, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5483,15 +5488,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 5419381394959026024, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
+        type: 3}
+      propertyPath: orthographic size
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.63982105
+      value: 1.1751735
       objectReference: {fileID: 0}
     - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4116731
+      value: -1.1203368
       objectReference: {fileID: 0}
     - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
@@ -5843,7 +5853,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 62.82, y: 35.704338}
+    oldSize: {x: 62.82, y: 35.69}
     newSize: {x: 62.82, y: 35.704338}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5941,7 +5951,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7814dae5c19174e0ea4d1e999d413719, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9ff1c1cfed3a4422becea4dcb900615, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6165,7 +6175,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 71.36, y: 31.568436}
+    oldSize: {x: 71.36, y: 31.56}
     newSize: {x: 71.36, y: 31.56}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6220,7 +6230,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2242ca69e4cd848ad858d5e7c6940adf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d71a251fea9264ccd97d81eeba1a1456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
