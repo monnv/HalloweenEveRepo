@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -12,7 +11,6 @@ public class Spawner : MonoBehaviour
     //redefine positions
     private float[] xPositions;
 
-    //
     [SerializeField]
     private Wave[] wave;
 
@@ -31,25 +29,18 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        //if (ScoreSystem.instance.gameOver == false)
-        {
-            //currentTime -= Time.deltaTime;
-            //if (currentTime <= 0)
-            {
-                //SelectWave();
-            }
-        }
+
     }
 
     void SpawnEnemy(float xPos)
     {
         // 0,# types of objects
-        int r = Random.Range(0, 1);
+        int r = Random.Range(0, 3);
         // Here we can label exactly which items with what names get referred to! (use Prefab names)
-        string enemyName = "";
-        if (r == 0) enemyName = "Spider";
+        string name = "";
+        if (r > 0) name = "Spider";
 
-        GameObject enemy = ObjectPooling.instance.GetPooledObject(enemyName);
+        GameObject enemy = ObjectPooling.instance.GetPooledObject(name);
         enemy.transform.position = new Vector3(xPos, transform.position.y, 0);
         enemy.SetActive(true);
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class ObjectPooling : MonoBehaviour
 {
 
@@ -10,12 +11,19 @@ public class ObjectPooling : MonoBehaviour
 
     private List<GameObject> pooledObjects;
 
+    [System.Serializable]
+    public class ObjectPoolItems
+    {
+        public string name;
+        public int poolAmount;
+        public GameObject poolObject;
+        public bool shouldExpand;
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
-
         if (instance == null) instance = this;
-
 
         pooledObjects = new List<GameObject>();
 
@@ -59,11 +67,3 @@ public class ObjectPooling : MonoBehaviour
 
 }
 
-[System.Serializable]
-public class ObjectPoolItems
-{
-    public string name;
-    public int poolAmount;
-    public GameObject poolObject;
-    public bool shouldExpand;
-}

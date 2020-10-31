@@ -28,7 +28,7 @@ public class Shatter : MonoBehaviour
             //this puts a message in the Console that the impact has hit, i took it off because idc
             //Debug.Log("Collided with Ground");
             //This is script that makes the object disappear when hitting the ground!
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
 
@@ -56,9 +56,14 @@ public class Shatter : MonoBehaviour
             //this puts a message in the Console that the impact has hit, i took it off because idc
             //Debug.Log("Collided with ground");
             //This is script that makes the object disappear when hitting the ground!
-            gameObject.SetActive(false);
+            Destroy(gameObject);
 
-           //Health.health -= 1;
+            //Health.health -= 1;
+        }
+
+        if (other.CompareTag("KillZone"))
+        {
+            Destroy(gameObject);
         }
     }
 }
