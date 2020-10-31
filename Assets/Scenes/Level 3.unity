@@ -533,7 +533,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 36.28, y: 19.486328}
+    oldSize: {x: 36.28, y: 19.48}
     newSize: {x: 36.28, y: 19.486328}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -828,7 +828,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 73.67999, y: 27.845858}
+    oldSize: {x: 73.68, y: 27.83}
     newSize: {x: 73.67999, y: 27.845858}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1950,7 +1950,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 50.01221, y: 20}
+    oldSize: {x: 50, y: 20}
     newSize: {x: 50.01221, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2147,7 +2147,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 36.28, y: 19.486328}
+    oldSize: {x: 36.28, y: 19.48}
     newSize: {x: 36.28, y: 19.486328}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2261,7 +2261,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 95.46142, y: 34.12}
+    oldSize: {x: 95.4, y: 34.121338}
     newSize: {x: 95.46142, y: 34.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3193,7 +3193,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 95.46142, y: 34.12}
+    oldSize: {x: 95.4, y: 34.121338}
     newSize: {x: 95.46142, y: 34.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3393,7 +3393,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 73.67999, y: 27.845858}
+    oldSize: {x: 73.68, y: 27.83}
     newSize: {x: 73.67999, y: 27.845858}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3423,7 +3423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2d: {fileID: 1008711472}
-  fallDelay: 0.8
+  fallDelay: 0.9
   respawns: 0
 --- !u!50 &1008711472
 Rigidbody2D:
@@ -3556,7 +3556,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 38.150642, y: 32.32}
+    oldSize: {x: 38.14, y: 32.32}
     newSize: {x: 38.150642, y: 32.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4221,7 +4221,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 50.01221, y: 20}
+    oldSize: {x: 50, y: 20}
     newSize: {x: 50.01221, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4840,7 +4840,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 95.46142, y: 34.12}
+    oldSize: {x: 95.4, y: 34.121338}
     newSize: {x: 95.46142, y: 34.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

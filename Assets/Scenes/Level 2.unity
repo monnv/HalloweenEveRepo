@@ -1250,10 +1250,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 6.6804504, y: 1.5573997}
-      - {x: -21.58371, y: -2.892414}
-      - {x: -21.170097, y: -7.777504}
-      - {x: 12.339767, y: -5.2142353}
+    - - {x: 29.303482, y: -2.3707142}
+      - {x: 19.23465, y: -6.6155777}
+      - {x: 10.781235, y: -3.4061432}
+      - {x: 11.366074, y: -8.976208}
+      - {x: 31.325653, y: -13.361437}
 --- !u!1 &469536377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1287,7 @@ Transform:
   - {fileID: 883327678}
   - {fileID: 1082836984}
   - {fileID: 2082196256}
+  - {fileID: 952261572}
   - {fileID: 1557595017}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -3322,8 +3324,8 @@ Transform:
   m_LocalPosition: {x: 108.08, y: -15.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 469536378}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.4800005}
 --- !u!1 &994761174
 GameObject:
@@ -4607,7 +4609,7 @@ Transform:
   - {fileID: 200617782}
   - {fileID: 2106554841}
   m_Father: {fileID: 469536378}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1598347695
 GameObject:
