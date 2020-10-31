@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     //redefine positions
     private float[] xPositions;
+
     //
     [SerializeField]
     private Wave[] wave;
@@ -46,8 +47,7 @@ public class Spawner : MonoBehaviour
         int r = Random.Range(0, 1);
         // Here we can label exactly which items with what names get referred to! (use Prefab names)
         string enemyName = "";
-        if (r == 0) enemyName = "Soul";
-        else if (r == 1) enemyName = "Hazard";
+        if (r == 0) enemyName = "Spider";
 
         GameObject enemy = ObjectPooling.instance.GetPooledObject(enemyName);
         enemy.transform.position = new Vector3(xPos, transform.position.y, 0);
@@ -65,7 +65,7 @@ public class Spawner : MonoBehaviour
         currentTime = wave[waveIndex].delayTime;
 
         if (wave[waveIndex].spawnAmount == 1)
-            xPos = Random.Range(-xLimit, xLimit);
+            xPos = Random.Range(0, xLimit);
         else if (wave[waveIndex].spawnAmount > 1)
         {
             rand = Random.Range(0, remainingPositions.Count);

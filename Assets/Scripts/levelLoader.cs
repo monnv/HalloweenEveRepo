@@ -16,5 +16,10 @@ public class levelLoader : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if (other.CompareTag("Spider"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 }

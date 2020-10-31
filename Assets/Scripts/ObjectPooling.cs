@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections.Generic;
-
-
 public class ObjectPooling : MonoBehaviour
 {
 
@@ -29,7 +26,7 @@ public class ObjectPooling : MonoBehaviour
                 GameObject obj = Instantiate(item.poolObject);
                 obj.name = item.name;
                 obj.transform.parent = this.transform;
-                obj.SetActive(false);
+                obj.SetActive(true);
                 pooledObjects.Add(obj);
             }
         }
@@ -57,10 +54,8 @@ public class ObjectPooling : MonoBehaviour
             }
         }
 
-
         return null;
     }
-
 
 }
 
