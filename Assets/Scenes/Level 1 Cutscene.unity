@@ -421,8 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1058723112}
   sentences:
-  - "I wonder why Eve wants to see me? . . . Maybe she\u2019s waiting there right
-    now"
+  - I wonder why Eve wants to see me? . . . Hope I didn't make her wait too long.
   typingSpeed: 0.08
 --- !u!1 &223447558
 GameObject:
@@ -3735,8 +3734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1112468597}
   sentences:
-  - Oh, hi Eve. Were you waiting long?
-  typingSpeed: 0.08
+  - Oh, hi Eve. Hope I didn't make you wait for very long?
+  typingSpeed: 0.07
   appearAnimation: {fileID: 2006865576}
 --- !u!225 &1906291112
 CanvasGroup:
@@ -4031,7 +4030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1154094949}
   sentences:
-  - "Nope, just got here. Let\u2019s go then. You can jump up, can\u2019t you?"
+  - Nope, just got here. Now let's get past these boulders.
   typingSpeed: 0.08
   appearAnimation: {fileID: 2006865576}
 --- !u!225 &2055442599
