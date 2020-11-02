@@ -9,6 +9,8 @@ TagManager:
   - KillZone
   - ThoughtPoint
   - Spider
+  - ThoughtBegone
+  - TalkPoint
   layers:
   - Default
   - TransparentFX

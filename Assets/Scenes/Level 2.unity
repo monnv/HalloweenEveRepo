@@ -1664,7 +1664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411856538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 155.53, y: -21.09, z: 0}
+  m_LocalPosition: {x: 153.8, y: -21.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 488369280}
@@ -3743,13 +3743,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750196112}
-  m_LocalRotation: {x: -0, y: -0, z: -0.044312727, w: 0.9990177}
-  m_LocalPosition: {x: 26.42, y: -13.53, z: -12.953125}
+  m_LocalRotation: {x: -0, y: -0, z: -0.06084145, w: 0.9981475}
+  m_LocalPosition: {x: 25.929996, y: -13.53, z: -12.953125}
   m_LocalScale: {x: 0.35071158, y: 0.35071158, z: 0.35071158}
   m_Children: []
   m_Father: {fileID: 1557595017}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.0800004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.9760003}
 --- !u!212 &750196114
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4887,7 +4887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1118123355}
   sentences:
-  - "Careful of the branches here. They\u2019re easy to break."
+  - Watch out for the ditch, jump on the branch
   typingSpeed: 0.07
   appearAnimation: {fileID: 341706748}
 --- !u!225 &1136000687
@@ -5888,6 +5888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738208868}
   - component: {fileID: 1738208869}
+  - component: {fileID: 1738208870}
   m_Layer: 0
   m_Name: Talk Point
   m_TagString: Untagged
@@ -5923,6 +5924,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 1738208867}
   Convo: {fileID: 1136000683}
+--- !u!61 &1738208870
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738208867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.9388633}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47666252, y: 12.450425}
+  m_EdgeRadius: 0
 --- !u!1 &1775593068
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,11 +7076,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 0, y: 9.629799}
+      - {x: 0.2527771, y: -7.9258003}
+      - {x: 2.672348, y: -7.823208}
+      - {x: 2.6882172, y: 9.499192}
 --- !u!4 &2071087600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4847625223219875499, guid: ce515939730fa44528e2ec7054fe28a7,
@@ -7180,7 +7206,7 @@ PrefabInstance:
     - target: {fileID: 4847625223219875499, guid: ce515939730fa44528e2ec7054fe28a7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.78
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 4847625223219875499, guid: ce515939730fa44528e2ec7054fe28a7,
         type: 3}
@@ -7248,7 +7274,7 @@ PrefabInstance:
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23200011
+      value: -0.42200017
       objectReference: {fileID: 0}
     - target: {fileID: 5419381393450352401, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
@@ -7333,7 +7359,7 @@ PrefabInstance:
     - target: {fileID: 5419381394959026029, guid: 021e54cedd6a1411a9a2a7b59b3d153d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23200011
+      value: -0.42200017
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021e54cedd6a1411a9a2a7b59b3d153d, type: 3}
