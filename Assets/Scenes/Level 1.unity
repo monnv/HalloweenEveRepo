@@ -4111,6 +4111,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entrance Boulder
       objectReference: {fileID: 0}
+    - target: {fileID: 172817823392539337, guid: ebba1e6350ebf44d49eed80703539eca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 172817823392539337, guid: ebba1e6350ebf44d49eed80703539eca,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[123].x
+      value: -3.9326286
+      objectReference: {fileID: 0}
+    - target: {fileID: 172817823392539337, guid: ebba1e6350ebf44d49eed80703539eca,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[123].y
+      value: -1.5561907
+      objectReference: {fileID: 0}
+    - target: {fileID: 172817823392539337, guid: ebba1e6350ebf44d49eed80703539eca,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[121].x
+      value: -3.7965393
+      objectReference: {fileID: 0}
+    - target: {fileID: 172817823392539337, guid: ebba1e6350ebf44d49eed80703539eca,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[121].y
+      value: -1.5043749
+      objectReference: {fileID: 0}
     - target: {fileID: 172817823392539338, guid: ebba1e6350ebf44d49eed80703539eca,
         type: 3}
       propertyPath: m_SortingLayerID
